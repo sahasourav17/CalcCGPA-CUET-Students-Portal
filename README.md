@@ -16,7 +16,7 @@ Steps are as follows:-
 * Login to your student portal and head over to the ``Published Result`` page.
 * Right Click on the page and Select inspect option.
 * In ``console`` just paste the previously copied code.
-* Boom!! It will show your CGPA less than a Second.
+* Boom!! It will show your CGPA less than a Second in the console.
 
 **NOTE**
 - Must choose 100 records per page.
