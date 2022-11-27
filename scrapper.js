@@ -61,4 +61,4 @@ for(let i=0; i < subjGrades.length; i++){
 }
 
 finalCgpa = (temp/totalCredit).toFixed(2)
-console.log(`Your CGPA is: ${finalCgpa}`);
+alert(`Your CGPA is: ${finalCgpa}`);
