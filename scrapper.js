@@ -27,7 +27,9 @@ let totalCredit = 0;
 
 for(let i = 0; i < credit.length; i++) {
     // console.log(totalCredit);
-    totalCredit += parseFloat(credit[i]);
+    if (subjGrades[i] !== 'F'){
+        totalCredit += parseFloat(credit[i]);
+    }
 }
 
 // let gradeObj = {
@@ -56,8 +58,11 @@ function gradeToNum(grade){
 
 let temp = 0;
 for(let i=0; i < subjGrades.length; i++){
-    subjGrades[i] = gradeToNum(subjGrades[i]);
-    temp += (subjGrades[i]*credit[i]);
+
+    if (subjGrades[i] !== 'F'){
+        subjGrades[i] = gradeToNum(subjGrades[i]);
+        temp += (subjGrades[i]*credit[i]);
+    }
 }
 
 finalCgpa = (temp/totalCredit).toFixed(2)
